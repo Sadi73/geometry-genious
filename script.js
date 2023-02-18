@@ -26,4 +26,16 @@ document.getElementById('rectangleBtn').addEventListener('click', function(){
 })
 
 
+document.getElementById('parallelogramBtn').addEventListener('click', function(){
+    const base = parseFloat(document.getElementById('parallelogram-b').value);
+    const height = parseFloat(document.getElementById('parallelogram-h').value);
+    const area = base * height;
+    document.getElementById('parallelogram-b').value = '';
+    document.getElementById('parallelogram-h').value = '';
+
+    const where_to_show = document.getElementById('area-calculation');
+    const what_to_add = document.createElement('p');
+    what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+    where_to_show.appendChild(what_to_add);
+})
 
