@@ -11,3 +11,19 @@ document.getElementById('triangleBtn').addEventListener('click', function(){
     where_to_show.appendChild(what_to_add);
 })
 
+
+document.getElementById('rectangleBtn').addEventListener('click', function(){
+    const width = parseFloat(document.getElementById('rectangle-w').value);
+    const length = parseFloat(document.getElementById('rectangle-l').value);
+    const area = width * length;
+    document.getElementById('rectangle-w').value = '';
+    document.getElementById('rectangle-l').value = '';
+
+    const where_to_show = document.getElementById('area-calculation');
+    const what_to_add = document.createElement('p');
+    what_to_add.innerText = 'Rectangle: ' + area + 'cm2';
+    where_to_show.appendChild(what_to_add);
+})
+
+
+
