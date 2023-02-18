@@ -11,7 +11,6 @@ document.getElementById('triangleBtn').addEventListener('click', function(){
     where_to_show.appendChild(what_to_add);
 })
 
-
 document.getElementById('rectangleBtn').addEventListener('click', function(){
     const width = parseFloat(document.getElementById('rectangle-w').value);
     const length = parseFloat(document.getElementById('rectangle-l').value);
@@ -24,7 +23,6 @@ document.getElementById('rectangleBtn').addEventListener('click', function(){
     what_to_add.innerText = 'Rectangle: ' + area + 'cm2';
     where_to_show.appendChild(what_to_add);
 })
-
 
 document.getElementById('parallelogramBtn').addEventListener('click', function(){
     const base = parseFloat(document.getElementById('parallelogram-b').value);
