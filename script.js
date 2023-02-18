@@ -38,6 +38,7 @@ document.getElementById('parallelogramBtn').addEventListener('click', function()
     what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
     where_to_show.appendChild(what_to_add);
 })
+
 document.getElementById('rhombusBtn').addEventListener('click', function(){
     const d1 = parseFloat(document.getElementById('rhombus-d1').value);
     const d2 = parseFloat(document.getElementById('rhombus-d2').value);
@@ -48,6 +49,32 @@ document.getElementById('rhombusBtn').addEventListener('click', function(){
     const where_to_show = document.getElementById('area-calculation');
     const what_to_add = document.createElement('p');
     what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+    where_to_show.appendChild(what_to_add);
+})
+
+document.getElementById('pentagonBtn').addEventListener('click', function(){
+    const p = parseFloat(document.getElementById('pentagon-p').value);
+    const b = parseFloat(document.getElementById('pentagon-b').value);
+    const area = 0.5 * p * b;
+    document.getElementById('pentagon-p').value = '';
+    document.getElementById('pentagon-b').value = '';
+
+    const where_to_show = document.getElementById('area-calculation');
+    const what_to_add = document.createElement('p');
+    what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+    where_to_show.appendChild(what_to_add);
+})
+
+document.getElementById('ellipseBtn').addEventListener('click', function(){
+    const a = parseFloat(document.getElementById('ellipse-a').value);
+    const b = parseFloat(document.getElementById('ellipse-b').value);
+    const area = 3.14 * a * b;
+    document.getElementById('ellipse-a').value = '';
+    document.getElementById('ellipse-b').value = '';
+
+    const where_to_show = document.getElementById('area-calculation');
+    const what_to_add = document.createElement('p');
+    what_to_add.innerText = 'Ellipse: ' + area + 'cm2';
     where_to_show.appendChild(what_to_add);
 })
 
