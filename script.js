@@ -38,4 +38,16 @@ document.getElementById('parallelogramBtn').addEventListener('click', function()
     what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
     where_to_show.appendChild(what_to_add);
 })
+document.getElementById('rhombusBtn').addEventListener('click', function(){
+    const d1 = parseFloat(document.getElementById('rhombus-d1').value);
+    const d2 = parseFloat(document.getElementById('rhombus-d2').value);
+    const area = 0.5 * d1 * d2;
+    document.getElementById('rhombus-d1').value = '';
+    document.getElementById('rhombus-d2').value = '';
+
+    const where_to_show = document.getElementById('area-calculation');
+    const what_to_add = document.createElement('p');
+    what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+    where_to_show.appendChild(what_to_add);
+})
 
