@@ -5,42 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Blog</title>
 </head>
 
 <body>
-    <section>
-        <h1> What is DOM and what is the purpose of DOM?</h1>
-        <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical
+    <h1>Frequently Asked Question</h1>
+    
+
+    <div class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+        <input type="checkbox" /> 
+        <div class="collapse-title text-xl font-medium">
+            What is DOM and what is the purpose of DOM?
+        </div>
+        <div class="collapse-content"> 
+          <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical
             structure of documents and the way a document is accessed and manipulated. In the DOM specification, the
             term "document" is used in the broad sense - increasingly, XML is being used as a way of representing many
             different kinds of information that may be stored in diverse systems, and much of this would traditionally
             be seen as data rather than as documents. Nevertheless, XML presents this data as documents, and the DOM may
             be used to manage this data.</p>
-        <p>With the Document Object Model, programmers can create and build documents, navigate their structure, and
-            add, modify, or delete elements and content. Anything found in an HTML or XML document can be accessed,
-            changed, deleted, or added using the Document Object Model, with a few exceptions - in particular, the DOM
-            interfaces for the internal subset and external subset have not yet been specified.</p>
-    </section>
-    <section>
-        <h1>How will you select HTML elements using DOM? Name the DOM methods.</h1>
-        <p>There are 5 ways in which you can select elements in a DOM using selectors. </p>
-        <ul>
-            <li>getElementsByTagName()</li>
-            <li>getElementsByClassName()</li>
-            <li>getElementById()</li>
-            <li>querySelector()</li>
-            <li>querySelectorAll()</li>
-        </ul>
-    </section>
-    <section>
-        <h1> What is event bubble?</h1>
-        <p>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
-    </section>
-    <section>
-        <h1>What is a callback function and why will you use it?</h1>
-        <p>In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes. So, we can also pass functions as parameters to other functions and call them inside the outer functions. </p>
-    </section>
+            <p>With the Document Object Model, programmers can create and build documents, navigate their structure, and
+                add, modify, or delete elements and content. Anything found in an HTML or XML document can be accessed,
+                changed, deleted, or added using the Document Object Model, with a few exceptions - in particular, the DOM
+                interfaces for the internal subset and external subset have not yet been specified.</p>
+        </div>
+    </div>
+    <div class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+        <input type="checkbox" /> 
+        <div class="collapse-title text-xl font-medium">
+            How will you select HTML elements using DOM? Name the DOM methods.
+        </div>
+        <div class="collapse-content"> 
+            <p>There are 5 ways in which you can select elements in a DOM using selectors. </p>
+            <ul>
+                <li>getElementsByTagName()</li>
+                <li>getElementsByClassName()</li>
+                <li>getElementById()</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+            </ul>
+        </div>
+    </div>
+    <div class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+        <input type="checkbox" /> 
+        <div class="collapse-title text-xl font-medium">
+            What is event bubble?
+        </div>
+        <div class="collapse-content"> 
+          <p>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
+        </div>
+    </div>
+    <div class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+        <input type="checkbox" /> 
+        <div class="collapse-title text-xl font-medium">
+            What is a callback function and why will you use it?
+        </div>
+        <div class="collapse-content"> 
+          <p>In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes. So, we can also pass functions as parameters to other functions and call them inside the outer functions.</p>
+        </div>
+      </div>
+    
+
+
+
 </body>
 
 </html>
