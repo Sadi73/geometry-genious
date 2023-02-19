@@ -10,10 +10,9 @@ document.getElementById('triangleBtn').addEventListener('click', function () {
         const area = (0.5 * base * height).toFixed(2);
         document.getElementById('triangle-b').value = '';
         document.getElementById('triangle-h').value = '';
-
         const where_to_show = document.getElementById('area-calculation');
         const what_to_add = document.createElement('p');
-        what_to_add.innerText = 'Triangle: ' + area + 'cm2';
+        what_to_add.innerText = 'Triangle: ' + area + ' cm2';
         where_to_show.appendChild(what_to_add);
     }
 })
@@ -50,10 +49,9 @@ document.getElementById('parallelogramBtn').addEventListener('click', function (
         const area = (base * height).toFixed(2);
         document.getElementById('parallelogram-b').value = '';
         document.getElementById('parallelogram-h').value = '';
-
         const where_to_show = document.getElementById('area-calculation');
         const what_to_add = document.createElement('p');
-        what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+        what_to_add.innerText = 'Parallelogram: ' + area + ' cm2';
         where_to_show.appendChild(what_to_add);
     }
 })
@@ -71,10 +69,9 @@ document.getElementById('rhombusBtn').addEventListener('click', function () {
         const area = (0.5 * d1 * d2).toFixed(2);
         document.getElementById('rhombus-d1').value = '';
         document.getElementById('rhombus-d2').value = '';
-
         const where_to_show = document.getElementById('area-calculation');
         const what_to_add = document.createElement('p');
-        what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+        what_to_add.innerText = 'Parallelogram: ' + area + ' cm2';
         where_to_show.appendChild(what_to_add);
     }
 })
@@ -92,10 +89,9 @@ document.getElementById('pentagonBtn').addEventListener('click', function () {
         const area = (0.5 * p * b).toFixed(2);
         document.getElementById('pentagon-p').value = '';
         document.getElementById('pentagon-b').value = '';
-
         const where_to_show = document.getElementById('area-calculation');
         const what_to_add = document.createElement('p');
-        what_to_add.innerText = 'Parallelogram: ' + area + 'cm2';
+        what_to_add.innerText = 'Parallelogram: ' + area + ' cm2';
         where_to_show.appendChild(what_to_add);
     }
 })
@@ -113,10 +109,9 @@ document.getElementById('ellipseBtn').addEventListener('click', function () {
         const area = (3.14 * a * b).toFixed(2);
         document.getElementById('ellipse-a').value = '';
         document.getElementById('ellipse-b').value = '';
-
         const where_to_show = document.getElementById('area-calculation');
         const what_to_add = document.createElement('p');
-        what_to_add.innerText = 'Ellipse: ' + area + 'cm' + '<sup>2</sup>';
+        what_to_add.innerText = 'Ellipse: ' + area + 'cm2';
         where_to_show.appendChild(what_to_add);
     }
 
